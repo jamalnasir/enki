@@ -232,7 +232,8 @@ a#fork_me {
     font-size: 29px; }
 
 .post {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  border-bottom: 1px dotted #cccccc; }
   .post h2.post_header {
     margin-top: 10px !important; }
     .post h2.post_header a {
@@ -260,6 +261,8 @@ a#fork_me {
 
 .entrybody {
   margin-top: 1em; }
+  .entrybody h2 {
+    margin: 15px 0 5px 0; }
 
 .share {
   margin: -40px 0 20px 0;

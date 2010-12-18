@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  before_filter :authenticate_user!, :set_current_user_for_model
+
   include UrlHelper
   OPEN_ID_ERRORS = {
     :missing  => "Sorry, the OpenID server couldn't be found",
@@ -8,7 +10,7 @@ class CommentsController < ApplicationController
   before_filter :find_post, :except => [:new]
 
   def index
-    if request.post? || using_open_id?
+    if request.post?
       create
     else
       redirect_to(post_path(@post))
