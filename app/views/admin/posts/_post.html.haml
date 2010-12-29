@@ -11,4 +11,8 @@
   %td
     = link_to image_tag('silk/percil.png', :alt => "edit"), admin_post_path(post)
     = link_to t('.delete'), admin_post_path(post), :method => :delete, :class => :destroy
-  %td= l post.published_at, :format => :short
+  %td
+    - if post.published_at.present? 
+      = l(post.published_at, :format => :short)
+    - else
+      = t(".draft")

@@ -71,4 +71,4 @@
     = f.submit t('.save')  
     = f.input :tag_list, :as => :string, :hint => t(".comma_separated")
     = f.input :published_at_natural, :label => t('.published_at'), :as => :string, :hint => t(".published_at_hint")
-    = f.input :minor_edit, :as => :boolean, :hint => t('.minor_edit_hint') unless @post.new_record?
+    = f.input :minor_edit, :as => :boolean, :hint => t('.minor_edit_hint') unless @post.new_record? || @post.published_at.blank?

@@ -22,13 +22,14 @@ en:
       post:
         delete: Delete
         no_tags: No Tags
+        draft: Draft
       show:
         title: "Editing post - %{link_to_show} by %{author}"
       form:
         save: Save
         comma_separated: "Comma separated: ruby, rails"
         published_at: Published at
-        published_at_hint: "Example: now, yesterday, 1 hour from now"
+        published_at_hint: "Example: now, yesterday, 1 hour from now. Leave blank for draft."
         slug_hint: Leave blank for an auto-generated slug based on the title.
         minor_edit_hint: Minor edits will not show up as refreshed in feed readers. Use this to fix spelling mistakes and the like.
       index:

@@ -15,7 +15,7 @@ class Post < ActiveRecord::Base
 
   validates_presence_of   :title, :slug, :markdown
 
-  validate                :validate_published_at_natural
+  # validate                :validate_published_at_natural
   
   def validate_published_at_natural
     errors.add("published_at_natural", "Unable to parse time") unless published?
@@ -108,7 +108,7 @@ class Post < ActiveRecord::Base
 
   def set_dates
     self.edited_at = Time.now if self.edited_at.nil? || !minor_edit?
-    self.published_at = Chronic.parse(self.published_at_natural)
+    self.published_at = Chronic.parse(self.published_at_natural) unless self.published_at_natural.blank?
   end
 
   def denormalize_comments_count!

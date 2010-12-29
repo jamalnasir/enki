@@ -147,7 +147,7 @@ describe Admin::PostsController do
       @post.stub!(:destroy_with_undo)
       Post.stub!(:find).and_return(@post)
     end
-
+xkj
     def do_delete
       login_user
       delete :destroy, :id => 1
