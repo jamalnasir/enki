@@ -1,92 +1,90 @@
-#master {
-  background: #eeeeee; }
-  #master #wrapper {
-    width: 1100px !important;
-    overflow: hidden; }
-    #master #wrapper #content {
-      width: 100%; }
-    #master #wrapper .panel {
-      margin: 20px 10px;
-      border: 1px solid #cccccc;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      overflow: hidden;
-      background: white; }
-      #master #wrapper .panel a {
-        text-decoration: none;
-        color: #00adec; }
-      #master #wrapper .panel h4 {
-        background: #dddddd;
-        -webkit-border-right-top-radius: 5px;
-        -moz-border-radius-topright: 5px;
-        border-top-right-radius: 5px;
-        -webkit-border-left-top-radius: 5px;
-        -moz-border-radius-topleft: 5px;
-        border-top-left-radius: 5px;
-        padding: 3px 5px;
-        text-shadow: 1px 1px 1px white;
-        margin-bottom: 5px; }
-        #master #wrapper .panel h4 .min_handle {
-          float: right;
-          border-left: 1px solid #dddddd;
-          content: ">";
-          height: 25px;
-          width: 20px; }
-      #master #wrapper .panel ul {
-        margin: 0;
-        padding: 0; }
-        #master #wrapper .panel ul li {
-          list-style: none; }
-      #master #wrapper .panel .panel_row {
-        width: 40%; }
-      #master #wrapper .panel .content {
-        float: left;
-        margin-right: 5px; }
-      #master #wrapper .panel .discussion {
+#master #wrapper {
+  width: 1100px !important;
+  overflow: hidden; }
+  #master #wrapper #content {
+    width: 100%; }
+  #master #wrapper .panel {
+    margin: 20px 10px;
+    border: 1px solid #cccccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white; }
+    #master #wrapper .panel a {
+      text-decoration: none;
+      color: #00adec; }
+    #master #wrapper .panel h4 {
+      background: #dddddd;
+      -webkit-border-right-top-radius: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-right-radius: 5px;
+      -webkit-border-left-top-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      border-top-left-radius: 5px;
+      padding: 3px 5px;
+      text-shadow: 1px 1px 1px white;
+      margin-bottom: 5px; }
+      #master #wrapper .panel h4 .min_handle {
         float: right;
-        margin-left: 5px; }
-      #master #wrapper .panel .panel_title {
-        border-bottom: 1px solid #dddddd;
-        color: #333333; }
-      #master #wrapper .panel h5 {
-        border-bottom: 1px solid #dddddd;
-        padding: 0 5px; }
-      #master #wrapper .panel ul {
-        padding: 5px 10px; }
-      #master #wrapper .panel form {
-        margin: 0;
-        padding: 0;
-        border: none;
-        width: 100%;
-        background: transparent; }
-        #master #wrapper .panel form textarea {
-          height: 80px;
-          vertical-align: top; }
-        #master #wrapper .panel form label {
-          width: 80px;
-          display: inline-block;
-          text-align: right; }
-        #master #wrapper .panel form input[type="submit"] {
-          margin-left: 100px; }
-        #master #wrapper .panel form input, #master #wrapper .panel form textarea {
-          margin-bottom: 5px; }
-    #master #wrapper .row {
+        border-left: 1px solid #dddddd;
+        content: ">";
+        height: 25px;
+        width: 20px; }
+    #master #wrapper .panel ul {
+      margin: 0;
+      padding: 0; }
+      #master #wrapper .panel ul li {
+        list-style: none; }
+    #master #wrapper .panel .panel_row {
+      width: 40%; }
+    #master #wrapper .panel .content {
       float: left;
-      width: 50%; }
-    #master #wrapper #post-wrapper {
-      width: 1100px; }
-      #master #wrapper #post-wrapper .post {
-        float: left;
-        width: 480px;
-        margin-right: 20px; }
-      #master #wrapper #post-wrapper form#post-form {
-        width: 560px;
-        float: right;
-        margin-right: 20px;
-        background: none;
-        border: none; }
-        #master #wrapper #post-wrapper form#post-form input, #master #wrapper #post-wrapper form#post-form textarea {
-          margin: 0; }
-        #master #wrapper #post-wrapper form#post-form input[type="text"], #master #wrapper #post-wrapper form#post-form textarea {
-          width: 100%; }
+      margin-right: 5px; }
+    #master #wrapper .panel .discussion {
+      float: right;
+      margin-left: 5px; }
+    #master #wrapper .panel .panel_title {
+      border-bottom: 1px solid #dddddd;
+      color: #333333; }
+    #master #wrapper .panel h5 {
+      border-bottom: 1px solid #dddddd;
+      padding: 0 5px; }
+    #master #wrapper .panel ul {
+      padding: 5px 10px; }
+    #master #wrapper .panel form {
+      margin: 0;
+      padding: 0;
+      border: none;
+      width: 100%;
+      background: transparent; }
+      #master #wrapper .panel form textarea {
+        height: 80px;
+        vertical-align: top; }
+      #master #wrapper .panel form label {
+        width: 80px;
+        display: inline-block;
+        text-align: right; }
+      #master #wrapper .panel form input[type="submit"] {
+        margin-left: 100px; }
+      #master #wrapper .panel form input, #master #wrapper .panel form textarea {
+        margin-bottom: 5px; }
+  #master #wrapper .row {
+    float: left;
+    width: 50%; }
+  #master #wrapper #post-wrapper {
+    width: 1100px; }
+    #master #wrapper #post-wrapper .post {
+      float: left;
+      width: 480px;
+      margin-right: 20px; }
+    #master #wrapper #post-wrapper form#post-form {
+      width: 560px;
+      float: right;
+      margin-right: 20px;
+      background: none;
+      border: none; }
+      #master #wrapper #post-wrapper form#post-form input, #master #wrapper #post-wrapper form#post-form textarea {
+        margin: 0; }
+      #master #wrapper #post-wrapper form#post-form input[type="text"], #master #wrapper #post-wrapper form#post-form textarea {
+        width: 100%; }
