@@ -1,13 +1,29 @@
-h1. Important Note
-This version of the extended version of Enki is no where near useable in production. You could follow the instructions of
-the original steps of Enki but I can't guarantee it will actually work (a lot is currently Work In Progress). So while I hack
-away bear with me for a little while. Once I get around updating most of the code I'll write a new README and (hopefully)
-preserve as much as possible of the original README text. 
+h1. Extended Enki
 
-PS. Sorry about the large text, I just want to make sure you read it before you clone this repo. and start using it and wonder
-why it ain't working and get angry with us :)
+h2. A demo of our Enki version could be found at "blog.agile-pandas.com":http://blog.agile-pandas.com 
 
-h1. Enki
+h3. Changes:
+* Main layout and admin layout are completely different (For a preview see top)
+* Haml/Sass (some views still need to be updated)
+* i18n (some views still need to be updated)
+* Post-preview-as-you-type
+* Divise instead of OpenID
+* Draft post
+* Removed Google search
+
+h3. Work in progress
+* Blog-setup
+
+h3. TODO
+* Complete i18n support
+* Get rid of ERB (fully implement Haml)
+* Clean up JS
+* Change the way drafting behaves (current:= Leave published at blank)
+* Simple statistics (such as blog-post views)
+* Google Analytics
+* Google Webmaster tools
+
+h1. Original Enki README
 
 A Ruby on Rails blogging app for the fashionable developer.
 
