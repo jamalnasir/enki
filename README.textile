@@ -1,6 +1,6 @@
 h1. Extended Enki
 
-h2. A demo of our Enki version could be found at "blog.agile-pandas.com":http://blog.agile-pandas.com 
+h2. A demo of our Enki version: "blog.agile-pandas.com":http://blog.agile-pandas.com 
 
 h3. Changes:
 * Main layout and admin layout are completely different (For a preview see top)
