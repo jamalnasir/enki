@@ -17,4 +17,14 @@ class PostsController < ApplicationController
     @post = Post.find_by_permalink(*([:year, :month, :day, :slug].collect {|x| params[x] } << {:include => [:approved_comments, :tags]}))
     @comment = Comment.new
   end
+  
+  rescue_from ActiveRecord::RecordNotFound, :with => :render_404
+
+  protected
+
+  def render_404
+    respond_to do |type|
+      type.html { render :template => "errors/404", :layout => "errors", :status => 404}
+    end
+  end
 end

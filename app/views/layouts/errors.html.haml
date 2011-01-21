@@ -1,0 +1,27 @@
+!!!
+%html{:dir => 'ltr', :lang => "en-NL"}
+  %head
+    %meta{'http-equiv' => "Content-Type", :content => "text/html;charset=utf-8"}
+    %title=yield(:page_title) || Blogs.title
+    = stylesheet_link_tag 'screen', 'wmd', 'errors'
+    = javascript_include_tag 'jquery'
+    = javascript_include_tag 'application'
+    = javascript_include_tag 'highlight'
+    = javascript_include_tag 'showdown'
+    
+  %body
+    - if Blog.show_fork
+      #fork-ribbon-holder
+        = link_to "http://github.com/agilepandas/enki", :class => 'ribbon' do
+          %span Fork me on Github
+    -# Not functional
+    -# Please note that the cucumber test will also fail.
+    =# render :partial => "shared/new_blog"
+          
+    #master
+      - if User.current?
+        #admin_navigation= render :partial => "shared/admin_menu"
+      #navigation= render :partial => "shared/menu"
+      #wrapper= yield
+      .push
+    = render :partial => "shared/footer"

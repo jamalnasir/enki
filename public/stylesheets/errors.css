@@ -1,0 +1,16 @@
+#for_oh_for {
+  text-align: center;
+  height: 300px;
+  font-size: 90pt;
+  line-height: 300px; }
+
+.errors {
+  text-align: center;
+  font-size: 12pt;
+  width: 100% !important; }
+  .errors h1 {
+    color: black;
+    width: 100%;
+    font-size: 45pt;
+    line-height: 80px;
+    color: #afce41; }
