@@ -1,6 +1,0 @@
-<h1>Editing page - <%= link_to(@page.title, page_path(@page.slug)) %></h1>
-
-<%= simple_form_for([:admin, @page]) do |form| -%>
-  <%= render :partial => 'form', :locals => {:form => form} %>
-  <%= form.submit("Save") -%>
-<% end -%>

@@ -1,6 +1,0 @@
-<h1>Editing tag - <%= link_to(@tag.name, posts_path(:tag => @tag)) %></h1>
-
-<%= simple_form_for([:admin, @tag]) do |form| -%>
-   <%= form.input :name %>
-   <%= form.submit("Save") -%>
-<% end -%>

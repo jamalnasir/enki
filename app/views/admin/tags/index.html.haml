@@ -1,0 +1,24 @@
+%h1 Your tags
+%table
+  %thead
+    %tr
+      %th Name
+      %th Posts Tagged
+      %th Actions
+  %tbody
+    - if @tags.empty?
+      %tr
+        %td{:colspan => "3"} There are no tags at this time.
+    - else
+      - @tags.each do |tag|
+        %tr{:class => cycle('', 'alt')}
+          %td= link_to(tag.name, edit_admin_tag_path(tag))
+          %td= tag.taggings.size
+          %td
+            = link_to(image_tag('silk/pencil.png', :alt => 'Edit'), edit_admin_tag_path(tag))
+            = link_to(image_tag("silk/delete.png"), admin_tag_path(tag), :method => :delete, :confirm => "You are about to delete this tag. It will be removed from all posts. This is permanent.\n\nAre you ABSOLUTELY sure?")
+  %tfoot
+    - if @tags.total_pages > 1
+      %tr.pagination
+        %td{:colspan => "3"}
+          = will_paginate(@tags, :previous_label => '« newer', :next_label => 'older »')
